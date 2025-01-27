@@ -1,0 +1,67 @@
+nohup: ignoring input
+[1] "All packages are loaded"
+Reading layer `I610Allneighbors' from data source 
+  `/home/chunwu.zhu/CodeInServer/NewData/A01/I610Allneighbors.shp' 
+  using driver `ESRI Shapefile'
+Simple feature collection with 20256 features and 40 fields
+Geometry type: MULTIPOLYGON
+Dimension:     XY
+Bounding box:  xmin: -95.4607 ymin: 29.67755 xmax: -95.2552 ymax: 29.81437
+Geodetic CRS:  WGS 84
+Setting up the model.
+The current progress of the model fitting algorithm has been output to CARBayesprogress.txt in the working directory
+Summarising results.
+Finished in  63347.9 seconds.
+
+#################
+#### Model fitted
+#################
+Likelihood model - Poisson (log link function) 
+Random effects model - Leroux CAR
+Regression equation - BikeCrash ~ TreeDen + FunClass + SPDLimit + Med + Oneway + DVMT + 
+    TruckPct + PAge18 + PAge65 + PMale + PBlack + PHispanic + 
+    MHI + PNoVeh + PEduBach + PRes + PCom + PInd + BikeExpRaw
+
+
+#################
+#### MCMC details
+#################
+Total number of post burnin and thinned MCMC samples generated - 600
+Number of MCMC chains used - 3
+Length of the burnin period used for each chain - 10000
+Amount of thinning used - 100
+
+############
+#### Results
+############
+Posterior quantities and DIC
+
+               Mean    2.5%   97.5% n.effective PSRF (upper 95% CI)
+(Intercept) -0.0996 -2.2062  2.2349       479.8                 1.1
+TreeDen     -0.0054 -0.0106 -0.0003       697.6                 1.0
+FunClass    -0.9007 -1.1834 -0.6110       552.6                 1.0
+SPDLimit    -0.0307 -0.0952  0.0175       523.3                 1.0
+Med         -1.9886 -4.0463 -0.6012        47.7                 1.2
+Oneway      -0.1366 -0.4397  0.1658       405.3                 1.0
+DVMT         0.0000  0.0000  0.0000       536.2                 1.0
+TruckPct     0.0147 -0.0451  0.0625       520.3                 1.0
+PAge18      -0.0344 -0.0660  0.0024       493.3                 1.0
+PAge65      -0.0003 -0.0330  0.0355      1067.6                 1.0
+PMale       -0.0100 -0.0714  0.0438       577.4                 1.0
+PBlack      -0.0041 -0.0172  0.0084       308.6                 1.0
+PHispanic   -0.0171 -0.0319 -0.0029       283.2                 1.0
+MHI          0.0000  0.0000  0.0000       455.6                 1.0
+PNoVeh       0.0132 -0.0889  0.1023       561.2                 1.0
+PEduBach     0.0025 -0.0130  0.0171       262.0                 1.1
+PRes        -0.0033 -0.0062 -0.0004       552.8                 1.0
+PCom        -0.0057 -0.0130  0.0010       619.2                 1.0
+PInd        -0.0027 -0.0516  0.0242       646.7                 1.0
+BikeExpRaw   0.0000  0.0000  0.0000       893.6                 1.0
+tau2         0.0000  0.0000  0.0000       600.0                 1.0
+rho          0.9918  0.9726  0.9998        70.3                 6.3
+
+DIC =  3676.817       p.d =  20.17104       LMPL =  -1841.1 
+          DIC           p.d          WAIC           p.w          LMPL 
+   3676.81748      20.17104    3681.38831      23.51867   -1841.10457 
+loglikelihood 
+  -1818.23770 

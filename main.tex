@@ -1,0 +1,50 @@
+\documentclass[a4]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[margin=1in]{geometry} % Required for setting the margin
+\usepackage{setspace}
+\onehalfspacing % 1.5倍行距
+\usepackage[style=apa, backend=biber, sorting=ynt]{biblatex}
+
+\usepackage{multirow}
+
+\usepackage{times} % Time new roman font
+
+\usepackage{hyperref} % !!!! 不要管本地的cross-ref！！cross-reference 本地显示cross reference有问题，没找到原因，overleaf上没问题
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdfpagemode=FullScreen,
+    menucolor=blue,
+}
+\usepackage{cleveref} 
+\usepackage{bookmark} % allows cross-referencing
+
+% \usepackage{caption} % 图表题目格式
+% \captionsetup[figure]{labelsep=period}
+% \captionsetup[table]{labelsep=period}
+
+
+\begin{document}
+% \maketitle
+
+\section{Introduction}
+
+\section{Literature Review}
+
+\section{Data and Methods}
+
+\section{Results}
+
+\input{B01Table/desc.tex}
+
+\input{B01Table/Aerial.tex}
+
+
+\section{Discussion}
+
+\section{Conclusion}
+
+\end{document}

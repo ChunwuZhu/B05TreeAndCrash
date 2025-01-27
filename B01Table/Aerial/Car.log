@@ -1,0 +1,71 @@
+nohup: ignoring input
+Reading layer `I610Allneighbors' from data source 
+  `/home/chunwu.zhu/CodeInServer/NewData/A01/I610Allneighbors.shp' 
+  using driver `ESRI Shapefile'
+Simple feature collection with 20256 features and 40 fields
+Geometry type: MULTIPOLYGON
+Dimension:     XY
+Bounding box:  xmin: -95.4607 ymin: 29.67755 xmax: -95.2552 ymax: 29.81437
+Geodetic CRS:  WGS 84
+Setting up the model.
+The current progress of the model fitting algorithm has been output to CARBayesprogress.txt in the working directory
+Summarising results.
+Finished in  134046.2 seconds.
+
+#################
+#### Model fitted
+#################
+Likelihood model - Poisson (log link function) 
+Random effects model - Leroux CAR
+Regression equation - CarCrash ~ TreeDen + FunClass + SPDLimit + Med + Oneway + DVMT + 
+    TruckPct + PAge18 + PAge65 + PMale + PBlack + PHispanic + 
+    MHI + PNoVeh + PEduBach + PRes + PCom + PInd
+
+
+#################
+#### MCMC details
+#################
+Total number of post burnin and thinned MCMC samples generated - 6000
+Number of MCMC chains used - 3
+Length of the burnin period used for each chain - 1e+05
+Amount of thinning used - 100
+
+############
+#### Results
+############
+Posterior quantities and DIC
+
+               Mean    2.5%   97.5% n.effective PSRF (upper 95% CI)
+(Intercept)  1.4154  0.3841  2.3936       151.8                 1.2
+TreeDen     -0.0091 -0.0104 -0.0078      4711.3                 1.0
+FunClass    -0.8625 -0.9349 -0.7892      1216.8                 1.0
+SPDLimit     0.0054 -0.0069  0.0177      1294.0                 1.0
+Med          0.4239  0.1433  0.6990       117.2                 1.1
+Oneway       0.0737 -0.0289  0.1788       461.7                 1.0
+DVMT         0.0000  0.0000  0.0000      1563.3                 1.0
+TruckPct     0.0228  0.0088  0.0368      3940.3                 1.0
+PAge18      -0.0528 -0.0714 -0.0305       162.8                 1.4
+PAge65       0.0023 -0.0201  0.0250       360.1                 1.1
+PMale       -0.0100 -0.0452  0.0226       208.0                 1.2
+PBlack      -0.0028 -0.0106  0.0057       135.0                 1.3
+PHispanic   -0.0041 -0.0127  0.0049       105.1                 1.2
+MHI          0.0000  0.0000  0.0000       426.7                 1.2
+PNoVeh       0.0141 -0.0322  0.0589      1029.5                 1.1
+PEduBach    -0.0055 -0.0148  0.0043       162.2                 1.3
+PRes        -0.0010 -0.0018 -0.0003      4903.8                 1.0
+PCom        -0.0011 -0.0028  0.0007      5135.8                 1.0
+PInd        -0.0060 -0.0193  0.0068      5139.8                 1.0
+tau2         3.2239  3.0852  3.3670      5851.9                 1.0
+rho          0.9220  0.9029  0.9393      4750.1                 1.0
+
+DIC =  46568.08       p.d =  6343.573       LMPL =  -24943.09 
+          DIC           p.d          WAIC           p.w          LMPL 
+    46568.080      6343.573     46312.496      4676.931    -24943.088 
+loglikelihood 
+   -16940.467 
+Setting up the model.
+The current progress of the model fitting algorithm has been output to CARBayesprogress.txt in the working directory
+Error in checkForRemoteErrors(lapply(cl, recvResult)) : 
+  3 nodes produced errors; first error: missing value where TRUE/FALSE needed
+Calls: S.CARleroux ... poisson.lerouxCAR -> clusterCall -> checkForRemoteErrors
+Execution halted
